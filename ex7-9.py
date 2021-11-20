@@ -4,6 +4,5 @@ with open(FILE_NAME, "w") as words_writer:
     words_writer.write("ilya")
 
 with open(FILE_NAME, "r") as words_reader:
-    words_content = words_reader.read()
-    print(words_content)
+    print("\n".join(words_reader.readlines()))
 
